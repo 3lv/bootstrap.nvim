@@ -51,7 +51,7 @@ end
 
 function M.setup(opts)
 	vim.tbl_deep_extend("force", config, opts or {})
-	vim.api.nvim_create_user_command("Dot", "lua require('boostrap').run()", {})
+	vim.api.nvim_create_user_command("Dot", "lua require('bootstrap').run()", {})
 end
 
 return M
